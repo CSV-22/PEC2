@@ -20,13 +20,13 @@
       padding-bottom: 25px;
       border-bottom: 1px solid #ddd;
     }
+    .flourish-embed {
+      width: 100%;
+      min-height: 450px;
+    }
     img {
       max-width: 100%;
       height: auto;
-    }
-    .grafico {
-      width: 100%;
-      min-height: 450px;
     }
   </style>
 </head>
@@ -34,14 +34,14 @@
 
   <h1>PEC 2: Visualización de datos</h1>
   <p>
-    En esta página se presentan tres técnicas de visualización:
-    mapa coroplético, gráfico de cascada y Horizon Graph.
+    Esta página reúne tres visualizaciones realizadas con datos abiertos:
+    un mapa coroplético, un gráfico de cascada y un Horizon Graph.
   </p>
 
   <section>
     <h2>1. Mapa coroplético</h2>
     <p>Renta neta anual media por persona en las provincias de España.</p>
-    <div class="flourish-embed flourish-map grafico"
+    <div class="flourish-embed flourish-map"
          data-src="visualisation/30688213">
       <script src="https://public.flourish.studio/resources/embed.js"></script>
       <noscript>
@@ -55,11 +55,15 @@
   <section>
     <h2>2. Gráfico de cascada</h2>
     <p>Componentes del balance demográfico de España en 2024.</p>
-    <p>
-      <a href="PEGA_AQUI_LA_URL_DE_TU_GRAFICO_DE_CASCADA">
-        Ver gráfico de cascada en Flourish
-      </a>
-    </p>
+    <div class="flourish-embed flourish-chart"
+         data-src="visualisation/30713052">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <a href="https://public.flourish.studio/visualisation/30713052/">
+          Ver el gráfico de cascada en Flourish
+        </a>
+      </noscript>
+    </div>
   </section>
 
   <section>
@@ -69,14 +73,12 @@
       Suecia, Canadá y Brasil entre 2000 y 2024.
     </p>
     <img src="horizon_graph.png"
-         alt="Horizon Graph de anomalías de temperatura">
+         alt="Horizon Graph de anomalías mensuales de temperatura">
   </section>
 
   <section>
     <h2>Fuentes de datos</h2>
-    <p>
-      <a href="https://www.ine.es/">Instituto Nacional de Estadística (INE)</a>
-    </p>
+    <p><a href="https://www.ine.es/">Instituto Nacional de Estadística (INE)</a></p>
     <p>
       <a href="https://ourworldindata.org/grapher/monthly-temperature-anomalies">
         Our World in Data: anomalías mensuales de temperatura
@@ -86,3 +88,4 @@
 
 </body>
 </html>
+
